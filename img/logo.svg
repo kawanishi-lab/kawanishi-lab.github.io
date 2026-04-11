@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="g-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4B5FF"/>
+      <stop offset="100%" stop-color="#B5D8FF"/>
+    </linearGradient>
+    <linearGradient id="g-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB5C2"/>
+      <stop offset="100%" stop-color="#FFD0D8"/>
+    </linearGradient>
+    <linearGradient id="g-mint" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B5EDDA"/>
+      <stop offset="100%" stop-color="#D0F5E8"/>
+    </linearGradient>
+    <linearGradient id="g-iris" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#8868D0"/>
+      <stop offset="100%" stop-color="#68A0E8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ====== Top-Left: Ear ====== -->
+  <g transform="translate(10, 10)">
+    <circle cx="45" cy="45" r="44" fill="url(#g-pink)" opacity="0.25"/>
+
+    <!-- Outer ear -->
+    <path d="M 50 12
+             C 36 8, 18 16, 14 32
+             C 10 50, 14 68, 26 78
+             C 34 84, 46 82, 50 74"
+          fill="#FFE8EE"
+          stroke="#D088A0" stroke-width="2.5" stroke-linejoin="round"/>
+
+    <!-- Inner ear -->
+    <path d="M 44 22
+             C 30 28, 22 42, 24 58
+             C 26 68, 34 76, 42 72"
+          fill="#FFB8C8" opacity="0.6"
+          stroke="#D088A0" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Inner fold -->
+    <path d="M 40 28 C 30 38, 26 52, 30 66"
+          stroke="#D088A0" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Sound waves (left side) -->
+    <path d="M 10 30 C 4 40, 4 56, 10 66" stroke="#D088A0" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.35"/>
+    <path d="M 4 24 C -4 38, -4 60, 4 74" stroke="#D088A0" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.2"/>
+  </g>
+
+  <!-- ====== Top-Right: Eye ====== -->
+  <g transform="translate(110, 10)">
+    <circle cx="45" cy="45" r="44" fill="url(#g-purple)" opacity="0.25"/>
+
+    <!-- Eye white -->
+    <path d="M 12 46 C 22 28, 42 22, 56 28 C 66 32, 76 40, 78 46 C 76 52, 66 60, 56 64 C 42 70, 22 64, 12 46 Z"
+          fill="white" stroke="#B098D0" stroke-width="2"/>
+
+    <!-- Upper lid -->
+    <path d="M 12 46 C 22 28, 42 22, 56 28 C 66 32, 76 40, 78 46"
+          stroke="#9878C0" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Iris -->
+    <circle cx="48" cy="46" r="13" fill="url(#g-iris)"/>
+    <!-- Pupil -->
+    <circle cx="48" cy="45" r="6" fill="#1C1630"/>
+    <!-- Sparkle -->
+    <circle cx="43" cy="40" r="4" fill="white" opacity="0.95"/>
+    <circle cx="53" cy="49" r="2" fill="white" opacity="0.6"/>
+
+    <!-- Lashes -->
+    <path d="M 22 34 L 20 26" stroke="#9878C0" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 38 26 L 37 18" stroke="#9878C0" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 58 28 L 60 20" stroke="#9878C0" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- ====== Bottom-Center: Nose (flipped) ====== -->
+  <g transform="translate(100, 155) scale(-1,1) translate(-45, -45)">
+    <circle cx="45" cy="45" r="44" fill="url(#g-mint)" opacity="0.25"/>
+
+    <!-- Nose shape -->
+    <path d="M 34 18
+             C 34 28, 30 38, 28 48
+             C 26 58, 30 66, 38 70
+             C 44 74, 52 72, 56 66
+             C 60 60, 56 56, 50 56"
+          fill="#D8F0E4"
+          stroke="#78B8A0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Nostril -->
+    <ellipse cx="44" cy="64" rx="4" ry="3" fill="#78B8A0" opacity="0.3"/>
+
+    <!-- Bridge highlight -->
+    <path d="M 36 24 C 34 34, 32 44, 30 52"
+          stroke="white" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+  </g>
+</svg>
