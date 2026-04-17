@@ -293,6 +293,37 @@ h1, h2, h3, h4, h5, h6 {
 .pop-tag.tag-yellow { background: var(--pastel-yellow); }
 .pop-tag.tag-orange { background: var(--pastel-orange); }
 
+/* Keyword Tag - frosted glass with individual tint */
+.keyword-tag {
+  display: inline-block;
+  padding: 0.4rem 1.1rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0.3rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.keyword-tag:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.kw-rose       { background: rgba(255,180,194,0.45); border: 1px solid rgba(255,180,194,0.6); }
+.kw-lavender   { background: rgba(200,175,240,0.45); border: 1px solid rgba(200,175,240,0.6); }
+.kw-sky        { background: rgba(160,210,255,0.45); border: 1px solid rgba(160,210,255,0.6); }
+.kw-teal       { background: rgba(140,220,210,0.45); border: 1px solid rgba(140,220,210,0.6); }
+.kw-lime       { background: rgba(180,230,160,0.45); border: 1px solid rgba(180,230,160,0.6); }
+.kw-honey      { background: rgba(255,220,140,0.45); border: 1px solid rgba(255,220,140,0.6); }
+.kw-peach      { background: rgba(255,195,150,0.45); border: 1px solid rgba(255,195,150,0.6); }
+.kw-coral      { background: rgba(255,165,165,0.45); border: 1px solid rgba(255,165,165,0.6); }
+.kw-lilac      { background: rgba(220,190,255,0.45); border: 1px solid rgba(220,190,255,0.6); }
+.kw-aqua       { background: rgba(150,225,240,0.45); border: 1px solid rgba(150,225,240,0.6); }
+
 /* Research Topic Cards */
 .topic-card {
   background: rgba(255,255,255,0.9);
@@ -420,6 +451,8 @@ h1, h2, h3, h4, h5, h6 {
   backdrop-filter: blur(20px);
   border-top: 1px solid rgba(212, 181, 255, 0.2);
   padding: 3rem 0 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .footer-brand {
