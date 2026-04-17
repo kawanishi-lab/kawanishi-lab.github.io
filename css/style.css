@@ -287,11 +287,34 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.05);
 }
 
+.pop-tag.tag-purple { background: var(--pastel-purple); }
 .pop-tag.tag-blue   { background: var(--pastel-blue); }
 .pop-tag.tag-pink   { background: var(--pastel-pink); }
 .pop-tag.tag-mint   { background: var(--pastel-mint); }
 .pop-tag.tag-yellow { background: var(--pastel-yellow); }
 .pop-tag.tag-orange { background: var(--pastel-orange); }
+
+/* Publication Type Tag - outline pill style */
+.pub-type-tag {
+  display: inline-block;
+  padding: 0.25rem 0.8rem;
+  border-radius: 2rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  margin: 0.25rem;
+  background: transparent;
+  color: var(--text-muted);
+  border: 2.5px solid rgba(0,0,0,0.15);
+  letter-spacing: 0.03em;
+  transition: all 0.3s ease;
+}
+
+.pub-type-tag:hover {
+  border-color: rgba(0,0,0,0.3);
+}
+
+.pub-type-tag.type-conference { color: #6a6a8a; border-color: #9a9abd; }
+.pub-type-tag.type-journal    { color: #6a7a6a; border-color: #8ab08a; }
 
 /* Keyword Tag - frosted glass with individual tint */
 .keyword-tag {
