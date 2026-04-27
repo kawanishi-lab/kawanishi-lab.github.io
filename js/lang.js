@@ -29,6 +29,18 @@
     });
 
     document.documentElement.lang = lang;
+
+    // Update page title
+    const titleEl = document.querySelector('title[data-ja]');
+    if (titleEl) {
+      document.title = lang === 'ja' ? titleEl.getAttribute('data-ja') : titleEl.getAttribute('data-en');
+    }
+
+    // Update meta description
+    const descEl = document.querySelector('meta[name="description"][data-ja]');
+    if (descEl) {
+      descEl.setAttribute('content', lang === 'ja' ? descEl.getAttribute('data-ja') : descEl.getAttribute('data-en'));
+    }
   }
 
   // Initialize on DOM ready

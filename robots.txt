@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.pil.ise.ritsumei.ac.jp/sitemap.xml
