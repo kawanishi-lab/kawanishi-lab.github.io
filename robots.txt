@@ -1,4 +1,16 @@
 User-agent: *
 Allow: /
 
+User-agent: facebookexternalhit
+Allow: /
+Allow: /img/
+
+User-agent: Twitterbot
+Allow: /
+Allow: /img/
+
+User-agent: LinkedInBot
+Allow: /
+Allow: /img/
+
 Sitemap: https://www.pil.ise.ritsumei.ac.jp/sitemap.xml
