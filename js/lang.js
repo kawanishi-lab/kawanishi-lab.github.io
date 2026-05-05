@@ -43,13 +43,19 @@
     }
   }
 
+  // Detect language from URL path
+  function getPageLang() {
+    return window.location.pathname.includes('/en/') ? 'en' : 'ja';
+  }
+
   // Initialize on DOM ready
   document.addEventListener('DOMContentLoaded', () => {
-    const lang = getLang();
+    const lang = getPageLang();
     applyLang(lang);
 
     document.querySelectorAll('.lang-toggle .btn').forEach(btn => {
       btn.addEventListener('click', () => {
+        // Navigation is handled by onclick in the HTML; just update visual state
         setLang(btn.getAttribute('data-lang'));
       });
     });
