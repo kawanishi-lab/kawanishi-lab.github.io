@@ -316,6 +316,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .pub-type-tag.type-conference { color: #6a6a8a; border-color: #9a9abd; }
 .pub-type-tag.type-journal    { color: #6a7a6a; border-color: #8ab08a; }
+.pub-type-tag.type-preprint   { color: #8a6a7a; border-color: #bd9aad; }
 
 /* Keyword Tag - frosted glass with individual tint */
 .keyword-tag {
